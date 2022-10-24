@@ -1,0 +1,341 @@
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
+  \****************************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter/Inter.ttf) format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url(fonts/SF-Pro-Text-Regular/SF-Pro-Text-Regular.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter/Inter.ttf) format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url(fonts/SF-Pro-Text-Regular/SF-Pro-Text-Regular.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  background-color: #FFF;
+}
+
+.topbar {
+  border-bottom: 1px solid #F0F0F0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.topbar__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.topbar__right {
+  margin-left: auto;
+}
+.topbar__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000;
+}
+.topbar__login {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #FFF;
+  cursor: pointer;
+  text-align: center;
+}
+.topbar__login-icon {
+  margin-right: 8px;
+}
+
+.navigation {
+  border-bottom: 1px solid #F0F0F0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+.navigation__wrapper {
+  display: flex;
+  align-items: center;
+}
+.navigation__logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.navigation__logo-img {
+  margin-right: 12px;
+}
+.navigation__cart {
+  border: none;
+  border-radius: 4px;
+  background-color: #FF7010;
+  color: #FFF;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.locationcity {
+  position: relative;
+}
+.locationcity__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.locationcity__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #191919;
+}
+.locationcity__select {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #FFF;
+  border: 1px solid #F0F0F0;
+  padding: 20px;
+  white-space: nowrap;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(25, 25, 25, 0.1);
+}
+.locationcity__select::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-top: 0;
+  border-color: transparent;
+  border-bottom-color: #F0F0F0;
+}
+.locationcity__select::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-top: 0;
+  border-color: transparent;
+  border-bottom-color: #FFF;
+  z-index: 10;
+}
+.locationcity__select-item {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter/Inter.ttf) format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url(fonts/SF-Pro-Text-Regular/SF-Pro-Text-Regular.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+.footer {
+  background-color: #FFF;
+  padding: 39px 0 25px 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.footer__column-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.footer__column-link {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+.footer__column-link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.logo-copyright {
+  justify-content: space-between;
+}
+
+.column__logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+.column__logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.link-connection {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+.link-connection img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.social-link {
+  display: flex;
+}
+.social-link a:not(:last-child) {
+  margin-right: 20px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter/Inter.ttf) format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url(fonts/SF-Pro-Text-Regular/SF-Pro-Text-Regular.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+.home {
+  padding: 30px 0;
+}
+
+.catalog__categories {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.catalog__categories-item {
+  color: #000;
+}
+.catalog__categories-item:first-child {
+  color: #E23535;
+}
+.catalog__categories__red {
+  color: #E23535;
+}
+.catalog__promo {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.catalog__promo-ad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  height: 343px;
+}
+
+.categories-item__wrapper {
+  background-color: #FFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 12px;
+  font-size: 18px;
+  width: 133px;
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.ad-text {
+  line-height: 28px;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 600;
+  margin: 0 0 20px 20px;
+  white-space: pre-line;
+}
+.ad-icon {
+  width: 100%;
+}
+
+.item-icon {
+  max-width: 32px;
+  max-height: 32px;
+  margin-bottom: 8px;
+}
+
+.orange {
+  background-color: #FF7010;
+}
+
+.red {
+  background-color: #E23535;
+}
+
+.ad {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  font-family: "SF Pro";
+  background-color: #F9F9F9;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1290px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
