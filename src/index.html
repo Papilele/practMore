@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Куда Пицца</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="topbar">
+          <div class="container">
+            <div class="topbar__wrapper">
+                <div class="locationcity" id="locationcity">
+                    <div class="locationcity__button">
+                      <img src="images/header/pin1.svg" class="locationcity__icon" />
+                      <span class="locationcity__title">Москва</span>
+                      <img src="images/header/arrow_down.svg" class="display-none-768"/>
+                    </div>
+                      <div class="locationcity__select" id="locationcity__select">
+                          <!--div class="locationcity__select-item">Ростов-на-Дону</div>
+                          <div class="locationcity__select-item">Санкт-Петербург</div>
+                          <div class="locationcity__select-item">Москва</div>
+                          <div class="locationcity__select-item">Тверь</div>
+                          <div class="locationcity__select-item">Рыбинск</div-->
+                      </div>
+                  </div>
+              <a href="#" class="topbar__info display-none-768">
+                Проверить адрес
+              </a>
+              <div class="topbar__info">
+                Среднее время доставки*: <b>00:24:19</b>
+              </div>
+              <div class="topbar__info topbar__right display-none-768">
+                Время работы: <span class="nbsp">с 11:00 до 23:00</span>
+              </div>
+              <button class="topbar__login display-none-768">
+                <img src="images/header/account.svg" class="topbar__login-icon" alt="Иконка войти" />
+                Войти в аккаунт
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="container">
+            <div class="navigation__wrapper">
+              <div class="navigation__logo">
+                <img src="images/header/logo.svg" class="navigation__logo-img" alt="Логотип" />
+                Куда пицца
+              </div>
+  
+              <!--ul class=navigation__menu">
+                <li class="navigation__menu-item"></li>
+              </ul-->
+  
+              <button class="navigation__cart display-none-768">
+                <img src="images/header/cart.svg" class="navigation__cart-logo" alt="Иконка корзины"/>
+                0 ₽
+              </button>
+              <button class="navigation__button display-block-768">
+                <img src="images/header/menu.svg" id="mobile-menu-icon"/>
+              </button>             
+            </div>
+           
+          </div>
+        </div>
+        <div class="navigation-mobile">
+            <div class="navigation-mobile__wrapper">
+              <a href="#" class="navigation-mobile__account"><img src="images/header/account.svg" />Войти в аккаунт</a>
+              <div class="navigation-mobile__links">
+                <a href="#">Акции</a>
+                <a href="#">О компании</a>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Условия гарантии</a>
+                <a href="#">Ресторан</a>
+                <a href="#">Контакты</a>
+                <a href="#">Поддержка</a>
+                <a href="#">Отследить заказ</a>
+              </div>
+              <div class="navigation-mobile__contact">
+                <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/phone.svg" alt='Телефон' />+7 (926) 223-10-11</a>
+                <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/pin.svg" alt='Адрес' />Москва, ул. Юных Ленинцев, д.99</a>
+                <div class="navigation-mobile__contact-social">
+                  <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/facebook.svg" alt='Facebook' />Facebook</a>
+                  <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/instagram.svg" alt='Instagram' />Instagram</a>                  
+                </div>
+
+
+              </div>
+              <div class="navigation-mobile__open-hours">Время работы: с 11:00 до 23:00</div>
+            </div>
+        </div>
+      </header>
+        <main class="home">
+          <div class="container">
+            <div class="catalog">
+              <div class="catalog__wrapper">
+                <div class="swiper1">
+                <div class="catalog__categories swiper-wrapper">
+
+                    <a href="#promo" class="catalog__categories-item swiper-slide">
+                      <div class="categories-item__wrapper">
+                        <img class="item-icon" src="images/home/promo.svg" alt="Акции" />
+                        <p class="item-text">Акции</p>
+                      </div>
+                    </a>
+
+                    <a href="#pizza" class="catalog__categories-item swiper-slide">
+                      <div class="categories-item__wrapper">
+                        <img class="item-icon" src="images/home/pizza.svg" alt="Пицца" />
+                        <p class="item-text">Пицца</p>
+                      </div>
+                    </a>
+
+                    <a href="#sushi" class="catalog__categories-item swiper-slide">
+                      <div class="categories-item__wrapper">
+                        <img class="item-icon" src="images/home/sushi.svg" alt="Суши" />
+                        <p class="item-text">Суши</p>
+                      </div>
+                    </a>
+
+                    <a href="#drinks" class="catalog__categories-item swiper-slide">
+                      <div class="categories-item__wrapper">
+                        <img class="item-icon" src="images/home/drinks.svg" alt="Напитки" />
+                        <p class="item-text">Напитки</p>
+                      </div>
+                    </a>
+
+                    <a href="#snacks" class="catalog__categories-item swiper-slide">
+                      <div class="categories-item__wrapper">
+                        <img class="item-icon" src="images/home/snacks.svg" alt="Закуски" />
+                        <p class="item-text">Закуски</p>
+                      </div>
+                    </a>
+
+                    <a href="#combo" class="catalog__categories-item swiper-slide">
+                      <div class="categories-item__wrapper">
+                        <img class="item-icon" src="images/home/combo.svg" alt="Комбо" />
+                        <p class="item-text">Комбо</p>
+                      </div>
+                    </a>
+
+                    <a href="#desserts" class="catalog__categories-item swiper-slide">
+                      <div class="categories-item__wrapper">
+                        <img class="item-icon" src="images/home/dessert.svg" alt="Десерты" />
+                        <p class="item-text">Десерты</p>
+                      </div>
+                    </a>
+
+                    <a href="#sauces" class="catalog__categories-item swiper-slide">
+                      <div class="categories-item__wrapper">
+                        <img class="item-icon" src="images/home/sauces.svg" alt="Соусы" />
+                        <p class="item-text">Соусы</p>
+                      </div>
+                    </a>
+
+                </div>                  
+                </div>
+
+                <div class="swiper">
+                <div class="catalog__promo swiper-wrapper" id="promo">
+
+                  <a href="#" class="swiper-slide">
+                    <div class="catalog__promo-ad orange">
+                      <div class="ad">
+                        <img class="ad-icon" src="images/home/promo1.png" alt="Баннер" />
+                      </div>
+                      <p class="ad-text">3 средние пиццы от 999 рублей</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="swiper-slide">
+                    <div class="catalog__promo-ad red">
+                      <div class="ad">
+                        <img class="ad-icon" src="images/home/promo2.png" alt="Баннер" />
+                      </div>
+                      <p class="ad-text">Кэшбек 10% на самовывоз (доставка)</p>
+                    </div>
+                  </a>
+                  
+                  <a href="#" class="swiper-slide">
+                    <div class="catalog__promo-ad orange">
+                      <div class="ad">
+                        <img class="ad-icon" src="images/home/promo1.png" alt="Баннер" />
+                      </div>
+                      <p class="ad-text">3 средние пиццы от 999 рублей</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="swiper-slide">
+                    <div class="catalog__promo-ad red">
+                      <div class="ad">
+                        <img class="ad-icon" src="images/home/promo2.png" alt="Баннер" />
+                      </div>
+                      <p class="ad-text">Кэшбек 10% на самовывоз (доставка)</p>
+                    </div>
+                  </a>
+
+                </div>                  
+                </div>
+
+
+                <div class="catalog__address">
+                  <p class="catalog__address-text">Проверить адрес доставки</p>
+                  <form class="search-form">
+                    <input type="text" class="search-form__input" placeholder="Адрес">
+                    <button type="submit" class="search-form__button display-none-768">Проверить</button>
+                    <button type="submit" class="search-form__button-mobile display-block-768"><img src="images/home/send.svg" /></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="menu">
+              <div class="menu__item" id="pizza">
+                <div class="menu__item-header">
+                  <p class="menu__item-title">Пицца</p>
+                  <button class="menu__item-filtres"><img src="./images/home/filter.svg" alt="Фильтры">Фильтры</button>
+                </div>
+                <div class="menu__item-assortment">
+
+                  <div class="product new">
+                    <div class="product__photo">
+                      <img src="./images/home/pizzas/chicken_shugar_chili.png" alt="Чикен Сладкий Чили">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Чикен Сладкий Чили</p>
+                        <p class="product__description-ingredients">Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc и так далее</p>
+                      </div>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768 display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768 display-none-768">от 399 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product hit">
+                    <div class="product__photo">
+                      <img src="./images/home/pizzas/easy_peasy_cucumber.png" alt="EASY PEASY огуречный расколбас">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">EASY PEASY огуречный расколбас</p>
+                        <p class="product__description-ingredients">Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc и так далее</p>
+                      </div>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">от 549 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 549 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/pizzas/easy_peasy_khren.png" alt="EASY PEASY чикен а-ля хрен">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">EASY PEASY чикен а-ля хрен</p>
+                        <p class="product__description-ingredients">Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуsadadadadad...</p>
+                      </div>  
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">от 249 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 249 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/pizzas/4_season.png" alt="4 сезона">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">4 сезона</p>
+                        <p class="product__description-ingredients">Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</p>                        
+                      </div>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">от 630 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/pizzas/4_season.png" alt="4 сезона">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">4 сезона</p>
+                        <p class="product__description-ingredients">Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</p>                        
+                      </div>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">от 630 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/pizzas/easy_peasy_khren.png" alt="EASY PEASY чикен а-ля хрен">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">EASY PEASY чикен а-ля хрен</p>
+                        <p class="product__description-ingredients">Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>                        
+                      </div>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">от 249 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/pizzas/chicken_shugar_chili.png" alt="Чикен Сладкий Чили">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Чикен Сладкий Чили</p>
+                        <p class="product__description-ingredients">Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>                        
+                      </div>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">от 399 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/pizzas/easy_peasy_cucumber.png" alt="EASY PEASY огуречный расколбас">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">EASY PEASY огуречный расколбас</p>
+                        <p class="product__description-ingredients">Курица, Лук, Перец Халапеньо...</p>                        
+                      </div>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">от 549 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="menu__item" id="sushi">
+                <div class="menu__item-header">
+                  <p class="menu__item-title">Суши</p>
+                  <button class="menu__item-filtres"><img src="./images/home/filter.svg" alt="Фильтры">Фильтры</button>
+                </div>
+                <div class="menu__item-assortment">
+
+                  <div class="product new">
+                    <div class="product__photo">
+                      <img src="./images/home/sushi/phil_crunch.png" alt="Филадельфия кранч">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Филадельфия кранч</p>
+                        <p class="product__description-ingredients">Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">475 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product hit">
+                    <div class="product__photo">
+                      <img src="./images/home/sushi/phil_crem.png" alt="Филадельфия крем-брюле">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Филадельфия крем-брюле</p>
+                        <p class="product__description-ingredients">Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">395 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sushi/phil_super.png" alt="Супер Филадельфия">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Супер Филадельфия</p>
+                        <p class="product__description-ingredients">Действительно много семги, сливочный сыр, огурец, рис, н...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">425 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sushi/tiger_mama.png" alt="Тигр мама">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Тигр мама</p>
+                        <p class="product__description-ingredients">Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">525 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sushi/tiger_mama.png" alt="Тигр мама">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Тигр папа</p>
+                        <p class="product__description-ingredients">Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">525 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sushi/phil_crunch.png" alt="Тигр тётя">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Тигр тётя</p>
+                        <p class="product__description-ingredients">Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">425 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sushi/phil_super.png" alt="Тигр бабушка">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Тигр бабушка</p>
+                        <p class="product__description-ingredients">Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">401 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sushi/phil_crem.png" alt="Тигр племянница">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Тигр племянница</p>
+                        <p class="product__description-ingredients">Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">Бесплатно</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="menu__item" id="snacks">
+                <div class="menu__item-header">
+                  <p class="menu__item-title">Закуски</p>
+                </div>
+                <div class="menu__item-assortment">
+
+                  <div class="product new">
+                    <div class="product__photo">
+                      <img src="./images/home/snacks/potato.png" alt="Картофель из печи">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Картофель из печи</p>
+                        <p class="product__description-ingredients">Запеченный картофель с итальянскими травами.</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product hit">
+                    <div class="product__photo">
+                      <img src="./images/home/snacks/wings.png" alt="Куриные крылья">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Куриные крылья</p>
+                        <p class="product__description-ingredients">Куриные крылышки со специями и ароматом копчения.</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">499 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/snacks/baits.png" alt="Куриные кусочки">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Куриные кусочки</p>
+                        <p class="product__description-ingredients">Сочное куриное филе в хрустящей панировке.</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">499 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/snacks/twister.png" alt="Тигр мама">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Додстер</p>
+                        <p class="product__description-ingredients">Легендарная горячая закуска с цыпленком, томатами, моцарела...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/snacks/twister.png" alt="Тигр мама">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Додстер</p>
+                        <p class="product__description-ingredients">Легендарная горячая закуска с цыпленком, томатами, моцарела...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/snacks/baits.png" alt="Куриные кусочки">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Куриные кусочки</p>
+                        <p class="product__description-ingredients">Сочное куриное филе в хрустящей панировке.</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">499 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/snacks/potato.png" alt="Картофель из печи">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Картофель из печи</p>
+                        <p class="product__description-ingredients">Запеченный картофель с итальянскими травами.</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/snacks/wings.png" alt="Куриные крылья">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Куриные крылья</p>
+                        <p class="product__description-ingredients">Куриные крылышки со специями и ароматом копчения.</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">499 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="menu__item" id="desserts">
+                <div class="menu__item-header">
+                  <p class="menu__item-title">Десерты</p>
+                </div>
+                <div class="menu__item-assortment">
+
+                  <div class="product new">
+                    <div class="product__photo">
+                      <img src="./images/home/desserts/nodules.png" alt="Узелки сладкие">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Узелки сладкие</p>
+                        <p class="product__description-ingredients">Мягкие булочки с корицей и сахарной пудрой</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">149 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product hit">
+                    <div class="product__photo">
+                      <img src="./images/home/desserts/bagels.png" alt="Рогалики с клубникой">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Рогалики с клубникой</p>
+                        <p class="product__description-ingredients">Сладкие рогалики с клубникой, сыром "кремчиз" и ...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/desserts/pancackes.png" alt="Сырники">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Сырники</p>
+                        <p class="product__description-ingredients">Нежные сырники из печи с соусом на выбор</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">159 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/desserts/magnat_classic.png" alt="Магнат Шоколадный трюфель">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Магнат Шоколадный трюфель</p>
+                        <p class="product__description-ingredients">Шоколадное мороженое с ...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">139 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/desserts/magnat_mango.png" alt="Магнат Манго и красные ягоды">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Магнат Манго и красные ягоды</p>
+                        <p class="product__description-ingredients">Мороженое эскимо сливочное c...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">139 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/desserts/magnat_mini.png" alt="Магнат Мини">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Магнат Мини</p>
+                        <p class="product__description-ingredients">Набор из 2 видов мороженого: Магнат Шоколадный трюфель...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">499 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                          
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/desserts/nodules.png" alt="Узелки сладкие">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Узелки сладкие</p>
+                        <p class="product__description-ingredients">Мягкие булочки с корицей и сахарной пудрой</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">149 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/desserts/bagels.png" alt="Рогалики с клубникой">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">Рогалики с клубникой</p>
+                        <p class="product__description-ingredients">Сладкие рогалики с клубникой, сыром "кремчиз" и ...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="menu__item" id="combo">
+                <div class="menu__item-header">
+                  <p class="menu__item-title">Комбо</p>
+                </div>
+                <div class="menu__item-assortment">
+
+                  <div class="product hit">
+                    <div class="product__photo">
+                      <img src="./images/home/combo/2_pizzas.png" alt="2 пиццы">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">2 пиццы</p>
+                        <p class="product__description-ingredients">Самое популярное комбо из 2 пицц 30 см: Карбонара + Аррива</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">999 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/combo/3_pizzas.png" alt="3 пиццы">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">3 пиццы</p>
+                        <p class="product__description-ingredients">Сырная + Пепперони фреш + Ветчина и сыр</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">1299 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/combo/2_pizzas_cola.png" alt="2 пиццы и напиток">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">2 пиццы и напиток</p>
+                        <p class="product__description-ingredients">Карбонара + Аррива + Освежающая Pepsi</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">1199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/combo/4_twisters.png" alt="4 Додстера">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">4 Додстера</p>
+                        <p class="product__description-ingredients">Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">539 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/combo/3_pizzas.png" alt="5 пицц">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">5 пицц</p>
+                        <p class="product__description-ingredients">Сырная + Пепперони фреш + Ветчина и сыр + Мясная + ...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">2299 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/combo/3_pizzas.png" alt="7 пицц">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">7 пицц</p>
+                        <p class="product__description-ingredients">Сырная + Пепперони фреш + Ветчина и сыр + Мясная + ...</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">3199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/combo/2_pizzas.png" alt="2 пиццы">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">2 пиццы</p>
+                        <p class="product__description-ingredients">Самое популярное комбо из 2 пицц 30 см: Карбонара + Аррива</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">999 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/combo/2_pizzas.png" alt="2 пиццы">
+                    </div>
+                    <div class="product__description">
+                      <div class="product__description-header">
+                        <p class="product__description-title">2 пиццыss afdafafaf afasfasfaf asfaf afafafaf afaf asfsaf</p>
+                        <p class="product__description-ingredients">Самое популярное комбо из 2 пицц 30 см: Карбонара + Аррива</p>                        
+                      </div>
+
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">999 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="menu__item" id="drinks">
+                <div class="menu__item-header">
+                  <p class="menu__item-title">Напитки</p>
+                </div>
+                <div class="menu__item-assortment">
+
+                  <div class="product new">
+                    <div class="product__photo">
+                      <img src="./images/home/drinks/adrenaline.png" alt="Adrenaline Gamefuel">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Adrenaline Gamefuel</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">199 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product hit">
+                    <div class="product__photo">
+                      <img src="./images/home/drinks/pepsi_max.png" alt="Pepsi Max">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Pepsi Max</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">99 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/drinks/pepsi_classic.png" alt="Pepsi">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Pepsi</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">99 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/drinks/pepsi_cherry.png" alt="Pepsi Wild Cherry">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Pepsi Wild Cherry</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">99 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/drinks/pepsi_zero.png" alt="Pepsi Light">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Pepsi Light</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">99 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/drinks/mirinda.png" alt="Mirinda">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Mirinda</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">99 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/drinks/pepsi_max.png" alt="Pepsi Max">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Pepsi Max</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">99 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/drinks/pepsi_classic.png" alt="Pepsi">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Pepsi</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">99 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="menu__item" id="sauces">
+                <div class="menu__item-header">
+                  <p class="menu__item-title">Соусы</p>
+                </div>
+                <div class="menu__item-assortment">
+
+                  <div class="product new">
+                    <div class="product__photo">
+                      <img src="./images/home/sauces/cheese.png" alt="Сырный соус">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Сырный соус</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">49 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product hit">
+                    <div class="product__photo">
+                      <img src="./images/home/sauces/bbq.png" alt="Барбекю">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Барбекю</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">49 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sauces/tartar.png" alt="Соус Тартар">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Соус Тартар</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">49 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sauces/currant.png" alt="Брусничный соус">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Брусничный соус</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">49 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sauces/tartar.png" alt="Соус Тартар">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Соус Тартар</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">49 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sauces/currant.png" alt="Брусничный соус">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Брусничный соус</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">49 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sauces/cheese.png" alt="Сырный соус">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Сырный соус</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">49 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product">
+                    <div class="product__photo">
+                      <img src="./images/home/sauces/bbq.png" alt="Барбекю">
+                    </div>
+                    <div class="product__description">
+                      <p class="product__description-title">Барбекю</p>
+                      <div class="product__description-footer">
+                        <button class="product__description-button display-none-768">Выбрать</button>
+                        <p class="product__description-price display-none-768">49 ₽</p>
+                        <button class="product__description-button-mobile display-block-768">от 399 ₽</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="delivery">
+              <div class="delivery__title">
+                Доставка пиццы в Москве
+              </div>
+              <p class="delivery__info" id="delivery__info">
+                Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не то, и до магазина идти лень. Все пропало? Нет. Недорого заказать пиццу в Москве очень просто! Вам на помощь спешит супергерой – Domino's Pizza! Как у всякого супергероя, у Domino's Pizza есть свои суперсилы: восхитительный вкус продукции из отборных ингредиентов; широкий ассортимент, включающий легендарные, фирменные и классические виды, для вегетарианцев и любителей экспериментировать; быстрая и бесплатная доставка пиццы в течение 30 минут, чтобы вкусное и ароматное блюдо не успевало остыть.<br>
+                <br>
+                <b>Как сделать заказ</b>
+                <br>
+                Доставка пиццы от Domino's – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»; не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino's. И не забудьте оплатить заказ курьеру!
+              </p>
+              <button class="delivery__button display-block-768">Подробнее</button>
+              <div class="delivery__gradient"></div>
+            </div>
+          </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__column logo-copyright">
+              <div class="column__logo">
+                <img src="images/footer/logo.svg" class="column__logo-img" alt='Логотип' />
+                Куда пицца
+              </div>
+              <p class="column__copyright d-none-950">© Copyright 2021 — <span class="nbsp">Куда Пицца</span></p>  
+            </div>
+            <div class="footer__column">
+              <p class="footer__column-title">Куда пицца</p>
+              <a class="footer__column-link" href="#">О компании</a>
+              <a class="footer__column-link" href="#">Пользовательское соглашение</a>
+              <a class="footer__column-link" href="#">Условия гарантии</a>
+            </div>
+            <div class="footer__column">
+              <p class="footer__column-title">Помощь</p>
+              <a class="footer__column-link" href="#">Ресторан</a>
+              <a class="footer__column-link" href="#">Контакты</a>
+              <a class="footer__column-link" href="#">Поддержка</a>
+              <a class="footer__column-link" href="#">Отследить заказ</a>
+            </div>
+            <div class="footer__column">
+              <p class="footer__column-title">Контакты</p>
+              <div class="footer__column-link">
+                <a href="#" class="link-connection"><img src="images/footer/phone.svg" alt='Телефон' />+7 (926) 223-10-11</a>
+              </div>
+              <div class="footer__column-link">
+                <a href="#" class="link-connection"><div class="link-icon"><img src="images/footer/pin.svg" alt='Адрес' /></div>Москва, ул. Юных Ленинцев, д.99</a>
+              </div>
+              <div class="footer__column-link social-link">
+                <a href="#" class="link-connection"><img src="images/footer/facebook.svg" alt='Facebook' />Facebook</a>
+                <a href="#" class="link-connection"><img src="images/footer/instagram.svg" alt='Instagram' />Instagram</a>
+              </div>
+            </div>
+            <div class="line-gray-mobile display-block-768"></div>
+            <p class="copyright-mobile display-block-768">© Copyright 2021 — Куда Пицца</p>     
+          </div>          
+        </div>
+  
+  
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
