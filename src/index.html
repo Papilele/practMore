@@ -19,11 +19,6 @@
                       <img src="images/header/arrow_down.svg" class="display-none-768"/>
                     </div>
                       <div class="locationcity__select" id="locationcity__select">
-                          <!--div class="locationcity__select-item">Ростов-на-Дону</div>
-                          <div class="locationcity__select-item">Санкт-Петербург</div>
-                          <div class="locationcity__select-item">Москва</div>
-                          <div class="locationcity__select-item">Тверь</div>
-                          <div class="locationcity__select-item">Рыбинск</div-->
                       </div>
                   </div>
               <a href="#" class="topbar__info display-none-768">
@@ -42,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div class="navigation">
+        <div class="navigation" id="navigation-button">
           <div class="container">
             <div class="navigation__wrapper">
               <div class="navigation__logo">
@@ -65,30 +60,33 @@
            
           </div>
         </div>
-        <div class="navigation-mobile">
+        <div class="navigation-mobile" id="navigation-mobile">
+          <div class="navigation-mobile__shell">
             <div class="navigation-mobile__wrapper">
-              <a href="#" class="navigation-mobile__account"><img src="images/header/account.svg" />Войти в аккаунт</a>
-              <div class="navigation-mobile__links">
-                <a href="#">Акции</a>
-                <a href="#">О компании</a>
-                <a href="#">Пользовательское соглашение</a>
-                <a href="#">Условия гарантии</a>
-                <a href="#">Ресторан</a>
-                <a href="#">Контакты</a>
-                <a href="#">Поддержка</a>
-                <a href="#">Отследить заказ</a>
-              </div>
-              <div class="navigation-mobile__contact">
-                <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/phone.svg" alt='Телефон' />+7 (926) 223-10-11</a>
-                <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/pin.svg" alt='Адрес' />Москва, ул. Юных Ленинцев, д.99</a>
-                <div class="navigation-mobile__contact-social">
-                  <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/facebook.svg" alt='Facebook' />Facebook</a>
-                  <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/instagram.svg" alt='Instagram' />Instagram</a>                  
+                <a href="#" class="navigation-mobile__account"><img src="images/header/account.svg" />Войти в аккаунт</a>
+                <div class="navigation-mobile__links">
+                  <a href="#">Акции</a>
+                  <a href="#">О компании</a>
+                  <a href="#">Пользовательское соглашение</a>
+                  <a href="#">Условия гарантии</a>
+                  <a href="#">Ресторан</a>
+                  <a href="#">Контакты</a>
+                  <a href="#">Поддержка</a>
+                  <a href="#">Отследить заказ</a>
                 </div>
+                <div class="navigation-mobile__contact">
+                  <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/phone.svg" alt='Телефон' />+7 (926) 223-10-11</a>
+                  <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/pin.svg" alt='Адрес' />Москва, ул. Юных Ленинцев, д.99</a>
+                  <div class="navigation-mobile__contact-social">
+                    <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/facebook.svg" alt='Facebook' />Facebook</a>
+                    <a href="#" class="navigation-mobile__contact-link"><img src="images/footer/instagram.svg" alt='Instagram' />Instagram</a>                  
+                  </div>
 
 
+                </div>
+                <div class="navigation-mobile__open-hours">Время работы: с 11:00 до 23:00</div>                
               </div>
-              <div class="navigation-mobile__open-hours">Время работы: с 11:00 до 23:00</div>
+
             </div>
         </div>
       </header>
@@ -217,7 +215,7 @@
                   <p class="menu__item-title">Пицца</p>
                   <button class="menu__item-filtres"><img src="./images/home/filter.svg" alt="Фильтры">Фильтры</button>
                 </div>
-                <div class="menu__item-assortment">
+                <!-- <div class="menu__item-assortment">
 
                   <div class="product new">
                     <div class="product__photo">
@@ -354,6 +352,9 @@
                       </div>
                     </div>
                   </div>
+
+                </div> -->
+                <div class="menu__item-assortment">
 
                 </div>
               </div>
@@ -1221,13 +1222,16 @@
               <div class="delivery__title">
                 Доставка пиццы в Москве
               </div>
-              <p class="delivery__info" id="delivery__info">
-                Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не то, и до магазина идти лень. Все пропало? Нет. Недорого заказать пиццу в Москве очень просто! Вам на помощь спешит супергерой – Domino's Pizza! Как у всякого супергероя, у Domino's Pizza есть свои суперсилы: восхитительный вкус продукции из отборных ингредиентов; широкий ассортимент, включающий легендарные, фирменные и классические виды, для вегетарианцев и любителей экспериментировать; быстрая и бесплатная доставка пиццы в течение 30 минут, чтобы вкусное и ароматное блюдо не успевало остыть.<br>
-                <br>
-                <b>Как сделать заказ</b>
-                <br>
-                Доставка пиццы от Domino's – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»; не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino's. И не забудьте оплатить заказ курьеру!
-              </p>
+              <div class="delivery__wrapper" id="delivery__wrapper">
+                <p class="delivery__info" id="delivery__info">
+                  Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не то, и до магазина идти лень. Все пропало? Нет. Недорого заказать пиццу в Москве очень просто! Вам на помощь спешит супергерой – Domino's Pizza! Как у всякого супергероя, у Domino's Pizza есть свои суперсилы: восхитительный вкус продукции из отборных ингредиентов; широкий ассортимент, включающий легендарные, фирменные и классические виды, для вегетарианцев и любителей экспериментировать; быстрая и бесплатная доставка пиццы в течение 30 минут, чтобы вкусное и ароматное блюдо не успевало остыть.<br>
+                  <br>
+                  <b>Как сделать заказ</b>
+                  <br>
+                  Доставка пиццы от Domino's – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»; не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino's. И не забудьте оплатить заказ курьеру!
+                </p>                
+              </div>
+
               <button class="delivery__button display-block-768">Подробнее</button>
               <div class="delivery__gradient"></div>
             </div>

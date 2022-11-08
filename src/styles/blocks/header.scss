@@ -130,6 +130,7 @@
 
     &-mobile {
       border-bottom: 1px solid $colorLineGray;
+      transition: height 0.5s ease;
 
       &__account {
         padding: 20px;
@@ -275,6 +276,6 @@
 }
 
 .navigation-mobile {
-  display: none;
+  //display: none;
   overflow: hidden;
 }

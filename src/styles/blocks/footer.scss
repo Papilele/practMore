@@ -30,14 +30,18 @@
     .d-none-950 {
         display: none !important;
     }
-    .logo-copyright {
-        width: 700px !important;
-    }
+
     .column {
         &__logo {
             margin: 0 auto;
             margin-bottom: 25px !important;
         }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 950px) {
+    .logo-copyright {
+        width: 700px !important;
     }
 }
 
