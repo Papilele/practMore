@@ -2,16 +2,13 @@ import json from '../../products.json';
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    // var request = new XMLHttpRequest();
-    // request.open('GET', json);
-    // request.responseType = 'json';
-    // request.send();
-    // request.onload = loadProducts(json);
- //
+
+    //РЕНДЕР ЭЛЕМЕНТОВ
     function loadProducts(data) {
         const productList = document.querySelector('.menu__item-assortment');
+        productList.innerHTML = '';
 
-        data.products.forEach(product => {
+        data.forEach(product => {
             const productId = product.id;
             const productTitle = product.title;
             const productIngredients = product.ingredients;
@@ -38,9 +35,78 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
           `;
 
-          productList.insertAdjacentHTML('beforeend', productCard); //beforeend заменить
+          productList.insertAdjacentHTML('beforeend', productCard);
 
         });
     }
-    loadProducts(json);
+    loadProducts(json.products);
+
+
+    //СОРТИРОВКА
+    const buttonSort = document.getElementById('pizza-sort-button');
+    const wrapperSort = document.getElementById('pizza-sort');
+    const sort = ['Цена: по возрастанию','Цена: по убыванию','По алфавиту'];
+    let sortArray;
+    let isOpen = false;
+
+    buttonSort.addEventListener("click", function() {
+        isOpen = !isOpen;
+        if (isOpen == true) {
+            sort.map((type, index) => {
+                wrapperSort.style.display = "block";
+                let button = document.createElement('button');
+                button.innerHTML = type;
+                button.className = "pizza-sort-type";
+                button.id = index;
+                wrapperSort.appendChild(button); 
+            });
+            buttonActivation();
+        } else {
+            wrapperSort.style.display = "none";
+            wrapperSort.replaceChildren();
+        }
+    });
+
+    var buttonActivation = function() {
+        let buttonsList = document.querySelectorAll('.pizza-sort-type');
+
+        for (let i=0; i < buttonsList.length; i++) {
+            buttonsList[i].addEventListener('click', function() {
+
+                if (buttonsList[i].id == 0) {
+
+                  sortArray = json.products.sort((a,b) => a.price-b.price);
+                  loadProducts(sortArray);
+                  wrapperSort.style.display = "none";
+                  isOpen = false;
+                  wrapperSort.replaceChildren();
+
+                } else if (buttonsList[i].id == 1) {
+
+                  sortArray = json.products.sort((a,b) => b.price-a.price);
+                  loadProducts(sortArray);
+                  wrapperSort.style.display = "none";
+                  isOpen = false;
+                  wrapperSort.replaceChildren();                  
+
+                } else {
+
+                  sortArray = json.products.sort(function (a, b) {
+                    if (a.title > b.title) {
+                      return 1;
+                    }
+                    if (a.title < b.title) {
+                      return -1;
+                    }
+                    return 0;
+                  });
+                  loadProducts(sortArray);
+                  wrapperSort.style.display = "none";
+                  isOpen = false;
+                  wrapperSort.replaceChildren();                  
+
+                }
+            })
+        }
+    }
 });
