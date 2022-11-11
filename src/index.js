@@ -4,7 +4,6 @@ import './scripts/locationcity.js';
 import './scripts/loadItems.js';
 import './scripts/swiperSetting.js';
 import './scripts/mobileAnimation.js';
-import './utils/filter.js';
 
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -3,10 +3,13 @@ import json from '../../products.json';
 
 document.addEventListener("DOMContentLoaded", function() {
 
+    let products = json.products;
+
     //РЕНДЕР ЭЛЕМЕНТОВ
     function loadProducts(data) {
         const productList = document.querySelector('.menu__item-assortment');
         productList.innerHTML = '';
+        console.log("loadProducts массив " + data)
 
         data.forEach(product => {
             const productId = product.id;
@@ -24,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="product__description">
               <div class="product__description-header">
                 <p class="product__description-title">${productTitle}</p>
-                <p class="product__description-ingredients">${productIngredients}</p>
+                <p class="product__description-ingredients">${productIngredients.join(', ')}</p>
               </div>
               <div class="product__description-footer">
                 <button class="product__description-button display-none-768 display-none-768">Выбрать</button>
@@ -39,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         });
     }
-    loadProducts(json.products);
+    loadProducts(products);
 
 
     //СОРТИРОВКА
@@ -60,20 +63,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 button.id = index;
                 wrapperSort.appendChild(button); 
             });
-            buttonActivation();
+            buttonActivationSort();
         } else {
             wrapperSort.style.display = "none";
             wrapperSort.replaceChildren();
         }
     });
 
-    var buttonActivation = function() {
+    var buttonActivationSort = function() {
         let buttonsList = document.querySelectorAll('.pizza-sort-type');
 
-        for (let i=0; i < buttonsList.length; i++) {
-            buttonsList[i].addEventListener('click', function() {
+        for (let x=0; x < buttonsList.length; x++) {
+            buttonsList[x].addEventListener('click', function() {
 
-                if (buttonsList[i].id == 0) {
+                if (buttonsList[x].id == 0) {
 
                   sortArray = json.products.sort((a,b) => a.price-b.price);
                   loadProducts(sortArray);
@@ -81,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   isOpen = false;
                   wrapperSort.replaceChildren();
 
-                } else if (buttonsList[i].id == 1) {
+                } else if (buttonsList[x].id == 1) {
 
                   sortArray = json.products.sort((a,b) => b.price-a.price);
                   loadProducts(sortArray);
@@ -109,4 +112,76 @@ document.addEventListener("DOMContentLoaded", function() {
             })
         }
     }
+
+
+    //ФИЛЬТРАЦИЯ
+
+    const buttonFilter = document.getElementById('pizza-filter-button');
+    const wrapperFilter = document.getElementById('filter-pizza');
+    const pizzaIngredients = ['Курица','Халапеньо','Ананас','Пепперони','Моцарелла','Бекон'];
+    let isOpenFilter = false;
+    let selectedIngredients = [];
+
+
+    buttonFilter.addEventListener("click", function() {
+        isOpenFilter = !isOpenFilter;
+        if (isOpenFilter == true) {
+            pizzaIngredients.map((ingredient) => {
+                wrapperFilter.style.display = "block";
+                let button = document.createElement('button');
+                button.innerHTML = ingredient;
+                button.className = "pizza-ingredient";
+                wrapperFilter.appendChild(button); 
+            });
+            buttonActivationFilter();
+            let showAll = document.createElement('button');
+            showAll.innerHTML = 'Показать все';
+            showAll.className = "show-all";
+            showAll.id = "show-all";
+            wrapperFilter.appendChild(showAll);
+        } else {
+            wrapperFilter.style.display = "none";
+            wrapperFilter.replaceChildren();
+        }
+        
+        document.getElementById('show-all').addEventListener('click', function() {
+          let sortedSelectedIng = selectedIngredients.sort();
+          let sortResult = [];
+          let count = 0;
+
+          for (let i=0; i < products.length; i++) {
+            count = 0;
+            console.log(i + ' -i`ый элемент')
+            for (let j=0; j < sortedSelectedIng.length; j++) {
+              console.log(i + ' -j`ый')
+              if (products[i].ingredients.join().includes(sortedSelectedIng[j])) {
+                count++;
+                console.log('count='+count)
+              }
+            }
+            if (sortedSelectedIng.length == count) {
+              sortResult.push(products[i]);
+            }
+          }
+          loadProducts(sortResult);
+        });
+
+    });
+
+    var buttonActivationFilter = function() {
+        let buttonsList = document.querySelectorAll('.pizza-ingredient');
+
+        for (let y=0; y < buttonsList.length; y++) {
+            buttonsList[y].addEventListener('click', function() {
+                buttonsList[y].classList.toggle('pizza-ingredient-selected');
+                if (buttonsList[y].classList.contains('pizza-ingredient-selected')) {
+                  selectedIngredients.push(buttonsList[y].innerHTML);
+                  console.log(selectedIngredients);
+                } else {
+                  selectedIngredients.splice(selectedIngredients.indexOf(buttonsList[y].innerHTML), 1);
+                  console.log(selectedIngredients);
+                }
+            })
+        }
+    };
 });

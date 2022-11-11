@@ -812,3 +812,16 @@ div[class*="hit"]::before {
         }
     }
 }
+
+.show-all {
+    background-color: $colorWhite;
+    border: none;
+    outline: $colorOrange solid 1px;
+    color: $colorOrange;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 13px 32px;
+    cursor: pointer;    
+
+}
