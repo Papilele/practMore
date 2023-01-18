@@ -1,4 +1,5 @@
 import json from '../../products.json';
+import { productCardDescriptionResizing } from '../index.js';
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
           productList.insertAdjacentHTML('beforeend', productCard);
 
         });
+        productCardDescriptionResizing();
     }
     loadProducts(products);
 

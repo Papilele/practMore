@@ -5,7 +5,7 @@
             "title": "Чикен Сладкий Чили",
             "ingredients": ["Курица", "Лук", "Халапеньо", "Моцарелла", "Томатный соуc", "Соус Барбекю"],
             "label": "new",
-            "image": "images/chicken_shugar_chili.png",
+            "image": "https://sun9-80.userapi.com/impg/Q1WrhgB2DV9LKDwhjf5N3VPqbSvFlSpOxNokug/z2RO0tMIGyQ.jpg?size=300x300&quality=96&sign=3eb20c30fc79b8d6b024daed8c5f2f50&type=album",
             "price": "399"
         },
         {
@@ -13,7 +13,7 @@
             "title": "EASY PEASY огуречный расколбас",
             "ingredients": ["Курица", "Лук", "Халапеньо", "Моцарелла", "Томатный соуc", "Соус Барбекю"],
             "label": "hit",
-            "image": "./images/home/pizzas/easy_peasy_cucumber.png",
+            "image": "images/2_pizzas.png",
             "price": "549"
         },
         {
@@ -21,7 +21,7 @@
             "title": "EASY PEASY чикен а-ля хрен",
             "ingredients": ["Курица", "Лук", "Халапеньо", "Моцарелла", "Томатный соуc", "Ананас"],
             "label": "",
-            "image": "./images/home/pizzas/easy_peasy_khren.png",
+            "image": "images/easy_peasy_khren.png",
             "price": "249"
         },
         {
@@ -29,7 +29,7 @@
             "title": "4 сезона",
             "ingredients": ["Бекон", "Ветчина", "Грибы", "Курица", "Лук", "Маслины", "Огурцы маринованые"],
             "label": "",
-            "image": "./images/home/pizzas/4_season.png",
+            "image": "images/4_season.png",
             "price": "630"
         },
         {
@@ -37,7 +37,7 @@
             "title": "4 сезона",
             "ingredients": ["Бекон", "Ветчина", "Грибы", "Курица", "Лук", "Маслины", "Огурцы маринованые"],
             "label": "",
-            "image": "./images/home/pizzas/4_season.png",
+            "image": "./images/4_season.png",
             "price": "630"
         },        
         {
@@ -45,7 +45,7 @@
             "title": "Чикен Сладкий Чили",
             "ingredients": ["Курица", "Лук", "Халапеньо", "Моцарелла", "Томатный соуc", "Соус Барбекю"],
             "label": "new",
-            "image": "./images/home/pizzas/chicken_shugar_chili.png",
+            "image": "./images/chicken_shugar_chili.png",
             "price": "399"
         },
         {
@@ -53,7 +53,7 @@
             "title": "EASY PEASY чикен а-ля хрен",
             "ingredients": ["Курица", "Лук", "Халапеньо", "Моцарелла", "Томатный соуc", "Ананас"],
             "label": "",
-            "image": "./images/home/pizzas/easy_peasy_khren.png",
+            "image": "./images/easy_peasy_khren.png",
             "price": "249"
         },        
         {
@@ -61,7 +61,7 @@
             "title": "EASY PEASY огуречный расколбас",
             "ingredients": ["Курица", "Лук", "Халапеньо", "Моцарелла", "Пепперони", "Соус Барбекю"],
             "label": "hit",
-            "image": "./images/home/pizzas/easy_peasy_cucumber.png",
+            "image": "./images/easy_peasy_cucumber.png",
             "price": "549"
         }
     ]
