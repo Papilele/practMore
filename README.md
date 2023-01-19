@@ -15,4 +15,6 @@
 
 Скриншоты:
 ![Иллюстрация к проекту](https://github.com/Papilele/practMore/blob/master/practMore_screen/1.png)
+
+Мобильная версия:
 ![Иллюстрация к проекту](https://github.com/Papilele/practMore/blob/master/practMore_screen/2.png)
