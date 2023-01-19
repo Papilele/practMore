@@ -12,3 +12,7 @@
 - webpack;
 - swiper ( для каруселей на мобильной версии страницы );
 - HTML, SCSS/SASS, JavaScript.
+
+Скриншоты:
+![Иллюстрация к проекту](https://github.com/Papilele/practMore/blob/master/practMore_screen/1.png)
+![Иллюстрация к проекту](https://github.com/Papilele/practMore/blob/master/practMore_screen/2.png)
